@@ -1,0 +1,125 @@
+/* || General */
+
+:root {
+  --primary-btn: #0066ff;
+  --primary-btn-hover: #005ce6;
+  --primary-btn-active: #004cbf;
+}
+* {
+  /* Disables double tap on touch devices (to zoom) */
+  touch-action: manipulation;
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font: 62.5%/1.5 Helvetica, Arial, sans-serif;
+}
+body {
+  font-size: 1.6rem;
+}
+
+/* || Layout */
+.form,
+.list-item,
+.left-box {
+  display: flex;
+  align-items: center;
+}
+.form {
+  flex-flow: column nowrap;
+}
+.list-item {
+  justify-content: space-between;
+}
+
+/* || Spacing */
+
+header,
+.list {
+  max-inline-size: 992px;
+  margin: 0 auto;
+}
+header p {
+  text-align: left;
+  padding: 1em;
+}
+.form {
+  inline-size: 95%;
+  max-inline-size: 576px;
+  margin: 0 auto;
+}
+input[type="text"] {
+  inline-size: inherit;
+  max-inline-size: 768px;
+  padding: 1em .5em;
+}
+.list {
+  padding: 0;
+}
+.list-item {
+  text-align: initial;
+  padding: 1em;
+  margin: .5em 1em;
+}
+#checkbox {
+  inline-size: 1.8rem;
+  block-size: 1.8rem;
+}
+#checkbox, 
+.fa-trash {
+  margin: 0 1.2em 0 .5em;
+}
+
+/* || Typography */
+
+header p {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: .1rem;
+}
+
+/* || Colour and graphic */
+
+.list {
+  list-style: none;
+}
+.list-item {
+  background-color: #eee; 
+}
+#checkbox, 
+.fa-trash {
+  cursor: pointer;
+}
+#checkbox:checked + label {
+  color: #969696;
+  text-decoration: line-through;
+}
+.fa-trash:hover {
+  color: #db5461;
+}
+
+/* || Button */
+
+button {
+  font-size: inherit;
+  color: #fff;
+  background-color: var(--primary-btn);
+  border-radius: 5px;
+  border: 0;
+  flex: 1;
+  inline-size: inherit;
+  margin-block: 1em;
+  padding: 1em 2em;
+  cursor: pointer;
+}
+button i {
+  padding-inline-end: .5rem;
+}
+button:hover {
+  background-color: var(--primary-btn-hover);
+}
+button:active {
+  background-color: var(--primary-btn-active);
+}
