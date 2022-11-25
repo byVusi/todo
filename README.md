@@ -20,6 +20,6 @@ A simple task manager. This is a practice project to better understand modules a
 
 ## Technologies
 
-* HTML
-* CSS
-* JavaScript
+- HTML
+- CSS
+- JavaScript

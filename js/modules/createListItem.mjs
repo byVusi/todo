@@ -7,11 +7,11 @@ document.querySelector("main").appendChild(ul);
 
 export function createListItem() {
   let task = input.value;
-  
+
   //Set up list item
   const li = document.createElement("li");
   li.setAttribute("class", "list-item");
-  
+
   //Set up boxes
   const left_box = document.createElement("div");
   const right_box = document.createElement("div");
@@ -31,7 +31,7 @@ export function createListItem() {
   left_box.appendChild(label);
 
   //In right box
-  const del = document.createElement("i")
+  const del = document.createElement("i");
   del.setAttribute("class", "fa fa-trash");
   del.setAttribute("onclick", "this.parentNode.parentNode.remove()");
   right_box.appendChild(del);

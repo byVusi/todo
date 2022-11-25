@@ -69,7 +69,7 @@ header p {
 input[type="text"] {
   inline-size: inherit;
   max-inline-size: 768px;
-  padding: 1em .5em;
+  padding: 1em 0.5em;
 }
 
 button {
@@ -79,7 +79,7 @@ button {
 }
 
 button i {
-  padding-inline-end: .5rem;
+  padding-inline-end: 0.5rem;
 }
 
 .list {
@@ -88,7 +88,7 @@ button i {
 
 .list-item {
   padding: 1em;
-  margin: .5em 1em;
+  margin: 0.5em 1em;
 }
 
 #checkbox {
@@ -96,9 +96,9 @@ button i {
   block-size: 1.8rem;
 }
 
-#checkbox, 
+#checkbox,
 .fa-trash {
-  margin: 0 1.2em 0 .5em;
+  margin: 0 1.2em 0 0.5em;
 }
 
 /* || Typography */
@@ -107,7 +107,7 @@ header p {
   font-size: 1.8rem;
   text-align: left;
   font-weight: bold;
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
 }
 
 button {
@@ -125,10 +125,10 @@ button {
 }
 
 .list-item {
-  background-color: #eee; 
+  background-color: #eee;
 }
 
-#checkbox, 
+#checkbox,
 .fa-trash {
   cursor: pointer;
 }
